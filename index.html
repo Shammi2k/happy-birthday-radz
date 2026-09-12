@@ -396,6 +396,10 @@ h2 {
     position: relative;
 }
 
+#screen3 .paper {
+    min-height: 710px;
+}
+
 .coin-shadow {
     position: absolute;
 
@@ -852,11 +856,13 @@ h2 {
 
     line-height: 1.55;
 
-    display: none;
+    display: block;
+    visibility: hidden;
+    min-height: 112px;
 }
 
 .error-box.visible {
-    display: block;
+    visibility: visible;
 
     animation:
         errorIn .5s ease,
@@ -909,11 +915,13 @@ h2 {
 
     width: min(100%, 330px);
 
-    display: none;
+    display: block;
+    visibility: hidden;
+    min-height: 35px;
 }
 
 .repair-progress.visible {
-    display: block;
+    visibility: visible;
 }
 
 .coin-continue {
